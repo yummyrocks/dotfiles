@@ -10,7 +10,7 @@
     "gpuTempVisualStyle": "gauge",
     "resourceOrder": "cpuUsage,cpuTemp,gpuTemp,ramUsage,diskPartitionUsage,networkSpeed",
     "ramUsageEnabled": true,
-    "ramUsageTextMode": "percentage",
+    "ramUsageTextMode": "value",
     "ramUsageVisualStyle": "default",
     "ramUsageShowIcon": true,
     "ramUsageFixedTextWidth": false,
@@ -119,7 +119,12 @@
     "copyVideoFile": true,
     "recordAudio": false,
     "showNotify": false,
-    "delaySeconds": 3
+    "delaySeconds": 3,
+    "mediaMode": "video",
+    "isVideoMode": true,
+    "recPillScreenName": "DP-1",
+    "recPillX": 1355,
+    "recPillY": 868
   },
   "bitwarden": {
     "enabled": true
