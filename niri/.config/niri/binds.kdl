@@ -47,7 +47,7 @@ binds {
         spawn-sh "dms ipc call control-center toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn-sh "dms ipc wallpaperCarousel toggle";
+        spawn-sh "dms ipc call dash toggle wallpaper";
     }
     Mod+Q hotkey-overlay-title="Screen toolkit" {
         spawn-sh "dms ipc call screenCaptureToolbar toggle";

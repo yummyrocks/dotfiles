@@ -70,6 +70,7 @@ window-rule {
 
 window-rule {
     match app-id="elecwhat"
+    match app-id="zapfast"
     match app-id="in.codelif.Whatevr"
     match app-id="vesktop"
     open-on-workspace "socials"
