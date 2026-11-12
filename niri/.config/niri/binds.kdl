@@ -7,7 +7,7 @@ binds {
     Mod+E { spawn "dolphin"; }
     Mod+B { spawn "helium-browser"; }
     Mod+Return { spawn-sh "kitty"; }
-    Mod+M { spawn "pear-desktop"; }
+    Mod+M { spawn "kopuz-nightly"; }
     // Toggle Droidcam
     Mod+F12 repeat=false cooldown-ms=500 { spawn-sh "bash ~/dotfiles/Scripts/toggle-phone-cam.sh";}
 
