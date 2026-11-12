@@ -61,14 +61,12 @@ overview {
 
 spawn-at-startup "vesktop"
 // spawn-at-startup "moe.kopuz.kopuz"
-spawn-at-startup "pear-desktop"
+// spawn-at-startup "pear-desktop"
+spawn-at-startup "kopuz-nightly"
 // spawn-at-startup "spotify"
 
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-
-
 
 
 window-rule {
