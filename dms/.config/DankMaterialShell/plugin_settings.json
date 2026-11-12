@@ -115,7 +115,7 @@
   },
   "screenCaptureToolbar": {
     "enabled": true,
-    "captureMode": "monitor",
+    "captureMode": "interactive",
     "copyVideoFile": true,
     "recordAudio": false,
     "showNotify": false,
@@ -124,7 +124,13 @@
     "isVideoMode": true,
     "recPillScreenName": "DP-1",
     "recPillX": 1355,
-    "recPillY": 868
+    "recPillY": 868,
+    "toolbarOpacity": "0.85",
+    "pillOpacity": "0.92",
+    "quality": "90",
+    "scrollInterval": "45",
+    "videoFPS": "30",
+    "showAdvancedSettings": false
   },
   "bitwarden": {
     "enabled": true

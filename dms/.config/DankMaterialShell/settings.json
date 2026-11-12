@@ -195,7 +195,7 @@
       "w": 1,
       "h": 1,
       "small": false,
-      "col": 3,
+      "col": 3.5,
       "row": 0
     },
     {
@@ -209,16 +209,16 @@
     {
       "id": "lock",
       "enabled": true,
-      "w": 1.5,
+      "w": 1,
       "h": 1,
       "small": false,
-      "col": 4,
+      "col": 4.5,
       "row": 0
     },
     {
       "id": "user",
       "enabled": true,
-      "w": 3,
+      "w": 3.5,
       "h": 1,
       "col": 0,
       "row": 0,
@@ -375,43 +375,15 @@
       ],
       "centerWidgets": [
         {
-          "id": "enderPulse:builtin_output",
-          "enabled": true
-        },
-        {
-          "id": "bitwarden",
-          "enabled": false
-        },
-        {
           "id": "clock",
           "enabled": true,
           "clockCompactMode": false,
-          "clockDateOrder": "timeFirst"
-        },
-        {
-          "id": "enderPulse:builtin_output",
-          "enabled": true
+          "clockDateOrder": "timeFirst",
+          "clockNotificationBadge": false,
+          "clockClickAction": "dash"
         }
       ],
       "rightWidgets": [
-        {
-          "id": "cpuTemp",
-          "enabled": false
-        },
-        {
-          "id": "gpuTemp",
-          "enabled": false,
-          "selectedGpuIndex": 0,
-          "pciId": "1002:73ff"
-        },
-        {
-          "id": "memUsage",
-          "enabled": false,
-          "showInGb": true,
-          "showSwap": false,
-          "overflowMode": "section",
-          "minimumWidth": true
-        },
         {
           "id": "systemMonitorPlus",
           "enabled": true
@@ -661,29 +633,6 @@
   ],
   "desktopWidgetInstances": [
     {
-      "id": "dw_1788619384049_0wh5t4msy",
-      "widgetType": "desktopClock",
-      "name": "Desktop Clock",
-      "enabled": true,
-      "config": {
-        "style": "expressive",
-        "transparency": 0,
-        "colorMode": "primary",
-        "customColor": "#ffffff",
-        "showDate": true,
-        "showAnalogNumbers": false,
-        "showAnalogSeconds": true,
-        "displayPreferences": [
-          "all"
-        ],
-        "fontFamily": "Distortion Dos Analogue",
-        "twoTone": true,
-        "showDigitalSeconds": false,
-        "rounded": false
-      },
-      "group": "dwg_1789104601766_e4zjnkq2t"
-    },
-    {
       "id": "dw_1788328551603_jrbbnaoii",
       "widgetType": "pureLyrics",
       "name": "Pure Lyrics",
@@ -700,6 +649,24 @@
         "textAlign": "right"
       },
       "group": "dwg_1789104601766_e4zjnkq2t"
+    },
+    {
+      "id": "dw_1794402967793_47mb7nn8e",
+      "widgetType": "persona5Calendar",
+      "name": "Persona 5 Calendar",
+      "enabled": true,
+      "config": {
+        "displayPreferences": [
+          "all"
+        ],
+        "widgetOpacity": 100,
+        "themeVersion": "dynamic",
+        "todMode": "game",
+        "animateWeather": true,
+        "showWeather": true,
+        "animInterval": 457,
+        "clickAction": "refresh"
+      }
     }
   ],
   "desktopWidgetGroups": [
@@ -728,7 +695,7 @@
   "frameBarSize": 35,
   "frameLauncherArcExtender": true,
   "frameBarInsetPadding": 6,
-  "configVersion": 42,
+  "configVersion": 43,
   "blurBorderEnabled": true,
   "dockConfigs": [
     {
@@ -910,13 +877,12 @@
     },
     "media": {
       "titleFont": "display",
-      "artStyle": "square",
       "animatedArt": true
     },
     "wallpaper": {
-      "panelColumns": 5,
       "rows": 3,
-      "columns": 3
+      "columns": 3,
+      "panelRows": 5
     },
     "notifications": {
       "panelRows": 6,
@@ -1177,5 +1143,6 @@
   "density": "compact",
   "interfaceStyle": "expressive",
   "widgetColorMode": "default",
-  "sectionDividerOpacity": 0.1
+  "sectionDividerOpacity": 0.1,
+  "notificationAnimationDuration": 399
 }
