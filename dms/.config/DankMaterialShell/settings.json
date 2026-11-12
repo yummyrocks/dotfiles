@@ -375,18 +375,22 @@
       ],
       "centerWidgets": [
         {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 0,
+          "mediaShowCoverArt": true,
+          "mediaStyle": "controls",
+          "overflowMode": "section",
+          "mediaAdaptiveWidthEnabled": true,
+          "mediaShowLyrics": false
+        },
+        {
           "id": "clock",
           "enabled": true,
           "clockCompactMode": false,
           "clockDateOrder": "timeFirst",
           "clockNotificationBadge": false,
           "clockClickAction": "dash"
-        }
-      ],
-      "rightWidgets": [
-        {
-          "id": "systemMonitorPlus",
-          "enabled": true
         },
         {
           "id": "controlCenterButton",
@@ -396,8 +400,15 @@
           "showAudioPercent": true,
           "showVpnIcon": false,
           "showMicIcon": true,
-          "showMicPercent": false,
-          "showScreenSharingIcon": false
+          "showMicPercent": true,
+          "showScreenSharingIcon": false,
+          "showDoNotDisturbIcon": false
+        }
+      ],
+      "rightWidgets": [
+        {
+          "id": "systemMonitorPlus",
+          "enabled": true
         },
         {
           "id": "systemTray",
@@ -410,16 +421,6 @@
         {
           "id": "dankPomodoroTimer",
           "enabled": false
-        },
-        {
-          "id": "music",
-          "enabled": true,
-          "mediaSize": 0,
-          "mediaShowCoverArt": true,
-          "mediaStyle": "controls",
-          "overflowMode": "section",
-          "mediaAdaptiveWidthEnabled": true,
-          "mediaShowLyrics": false
         }
       ],
       "spacing": 4,
@@ -1144,5 +1145,6 @@
   "interfaceStyle": "expressive",
   "widgetColorMode": "default",
   "sectionDividerOpacity": 0.1,
-  "notificationAnimationDuration": 399
+  "notificationAnimationDuration": 399,
+  "centeringMode": "index"
 }
