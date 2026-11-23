@@ -1,5 +1,8 @@
 if status is-interactive
     starship init fish | source
+end
+
+if status is-interactive; and test "$TERM" = xterm-kitty
     fastfetch
 end
 
@@ -9,3 +12,7 @@ fish_add_path ~/.local/bin ~/.opencode/bin ~/.spicetify
 alias lg lazygit
 alias cls clear
 alias dotfiles 'cd ~/dotfiles'
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/aryas/.lmstudio/bin
+# End of LM Studio CLI section
+
