@@ -1,6 +1,6 @@
 {
   "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
+  "currentThemeCategory": "custom",
   "customThemeFile": "/home/aryas/repos/dms-plugin-registry/themes/poimandres/theme.json",
   "registryThemeVariants": {
     "oxocarbon": "blue",
@@ -49,7 +49,7 @@
       }
     }
   },
-  "matugenScheme": "scheme-expressive",
+  "matugenScheme": "scheme-vibrant",
   "popupTransparency": 0.96,
   "floatingWindowSyncGlobal": false,
   "floatingWindowTransparency": 0.85,
@@ -63,16 +63,15 @@
   "calendarBackend": "dankcal",
   "clockFormat": "24h",
   "windSpeedUnit": "ms",
-  "syncComponentAnimationSpeeds": false,
   "springBounce": 2,
   "motionEffect": 2,
-  "m3ElevationIntensity": 10,
+  "m3ElevationIntensity": 20,
   "m3ElevationOpacity": 100,
   "m3ElevationLightDirection": "autoBar",
   "blurEnabled": true,
   "blurLayerOutlineOpacity": 0.4,
-  "blurBorderColor": "surfaceText",
-  "blurBorderOpacity": 0.93,
+  "blurBorderColor": "outline",
+  "blurBorderOpacity": 1,
   "wallpaperBackgroundColorMode": "surface",
   "systemTrayIconTintMode": "secondary",
   "systemTrayIconTintSaturation": 41,
@@ -120,7 +119,7 @@
       "w": 3,
       "h": 1,
       "col": 2,
-      "row": 4,
+      "row": 6,
       "small": false
     },
     {
@@ -165,7 +164,7 @@
       "h": 1,
       "instanceId": "mv38x3ywchi63xo145kawcs32f3sx",
       "col": 2,
-      "row": 3,
+      "row": 5,
       "small": false
     },
     {
@@ -366,7 +365,8 @@
           "showWorkspaceIndex": false,
           "showWorkspaceApps": false,
           "workspaceUnfocusedMonitorSeparateAppearance": false,
-          "overflowMode": "section"
+          "overflowMode": "section",
+          "showSpecialWorkspaces": false
         },
         {
           "id": "runningApps",
@@ -381,8 +381,10 @@
           "mediaShowCoverArt": true,
           "mediaStyle": "controls",
           "overflowMode": "section",
-          "mediaAdaptiveWidthEnabled": true,
-          "mediaShowLyrics": false
+          "mediaAdaptiveWidthEnabled": false,
+          "mediaShowLyrics": false,
+          "overflowPriority": 3,
+          "mediaTitleMode": "always"
         },
         {
           "id": "clock",
@@ -696,7 +698,7 @@
   "frameBarSize": 35,
   "frameLauncherArcExtender": true,
   "frameBarInsetPadding": 6,
-  "configVersion": 43,
+  "configVersion": 46,
   "blurBorderEnabled": true,
   "dockConfigs": [
     {
@@ -723,10 +725,12 @@
       "smartAutoHide": false,
       "useOverlayLayer": false,
       "editOnRightClick": false,
+      "showEditWidgetsInContextMenu": true,
       "showOnFullscreen": false,
       "openOnOverview": false,
       "groupByApp": false,
       "separatePinnedAndRunningApps": false,
+      "showRunningApps": true,
       "restoreSpecialWorkspaceOnClick": false,
       "isolateDisplays": false,
       "indicatorStyle": "circle",
@@ -824,8 +828,9 @@
       "tone": "secondary"
     },
     "clock": {
-      "tone": "tertiary",
-      "date": true
+      "date": true,
+      "weight": 600,
+      "tone": "tertiary"
     },
     "weather": {
       "widgets": [
@@ -894,9 +899,6 @@
     }
   },
   "displayFontFamily": "GRIFTER",
-  "animationDuration": 499,
-  "popoutAnimationDuration": 501,
-  "modalAnimationDuration": 506,
   "dashTabPosition": "left",
   "dashTabsEvenlySpaced": false,
   "lockScreenWidgetInstances": [
@@ -1001,7 +1003,8 @@
         ],
         "textAlign": "right",
         "borderOpacity": 0,
-        "fontSize": 23
+        "fontSize": 23,
+        "musixmatchToken": "00000000000000000000000000000000000000000000000000000000"
       }
     },
     {
@@ -1123,7 +1126,7 @@
   ],
   "controlCenterColumns": 8,
   "fontWeight": 400,
-  "fontScale": 1.04,
+  "fontScale": 1,
   "terminalPalette": "default",
   "generateThemeAtStartup": false,
   "avatarRing": "tertiary",
@@ -1145,6 +1148,31 @@
   "interfaceStyle": "expressive",
   "widgetColorMode": "default",
   "sectionDividerOpacity": 0.1,
-  "notificationAnimationDuration": 399,
-  "centeringMode": "index"
+  "centeringMode": "index",
+  "controlCenterEditLayout": "docked",
+  "controlCenterIconScale": 1,
+  "blurStrength": 0,
+  "m3ElevationColorMode": "surfaceVariant",
+  "popoutElevationEnabled": false,
+  "notificationPopupShadowEnabled": true,
+  "modalElevationEnabled": false,
+  "barElevationEnabled": true,
+  "screenPreferences": {
+    "wallpaper": [
+      "all"
+    ]
+  },
+  "blurredWallpaperLayer": false,
+  "matugenSpec": "dms",
+  "matugenSourceMode": "colorful",
+  "weatherProviders": [
+    {
+      "id": "openmeteo",
+      "enabled": true
+    },
+    {
+      "id": "metno",
+      "enabled": true
+    }
+  ]
 }
