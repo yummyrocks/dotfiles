@@ -10,9 +10,9 @@ cover_art_background = false
 cover_art_blur = 80
 cover_art_darkening = 60
 cover_fetch_strategy = "MusicBrainzFirst"
-crossfade_seconds = 0
+crossfade_seconds = 2
 custom_background_path = ""
-custom_font_path = "/usr/share/fonts/Groteskly Yours  Okta Neue Medium.otf"
+custom_font_path = "/usr/share/fonts/OTF/Allo-Regular.otf"
 device_change_behavior = "Resume"
 discord_presence = true
 discord_presence_paused = true
@@ -67,6 +67,7 @@ ui_style = "Normal"
 volume = 0.6
 volume_scroll_step = 0.05
 ytdlp_output_dir = ""
+autoplay_radio = true
 
 [active_source]
 Server = "3c014de5-fa31-4784-9f24-7bf3e5b63524"
@@ -114,7 +115,7 @@ bands = [
     0.0,
     0.0,
 ]
-enabled = false
+enabled = true
 preamp_db = 0.0
 preset = "Flat"
 
@@ -185,3 +186,10 @@ write_info_json = false
 write_subs = false
 write_thumbnail = false
 xattrs = false
+
+[replay_gain]
+fallback_gain_db = 0.0
+mode = "Auto"
+normalize_loudness = true
+preamp_db = 0.0
+prevent_clipping = true
