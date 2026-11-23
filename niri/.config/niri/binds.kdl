@@ -3,7 +3,6 @@ binds {
     // APP SHORTCUTS
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+Shift+I { spawn-sh "kitty -e pacsea"; }
-    Mod+N { spawn "code"; }
     Mod+E { spawn "dolphin"; }
     Mod+B { spawn "helium-browser"; }
     Mod+Return { spawn-sh "kitty"; }
@@ -18,6 +17,7 @@ binds {
 
 
     // ====== SHELL SPECIFIC =======
+    Mod+N { spawn-sh "dms ipc call dash toggle notifications"; }
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn-sh "dms ipc call spotlight-bar toggle";
     }
