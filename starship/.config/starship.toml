@@ -2,7 +2,7 @@ add_newline = true
 command_timeout = 200
 format = """
 [ ](#F087BD)\
-[  ](bold bg:#F087BD fg:#1B1E28)\
+$hostname\
 [](bg:#FFFAC2 fg:#F087BD)\
 $directory\
 [](fg:#FFFAC2 bg:#5DE4C7)\
@@ -43,3 +43,9 @@ conflicted = " "
 up_to_date = " "
 untracked  = "? "
 modified   = " "
+
+[hostname]
+ssh_only = false
+format = '[ $hostname ]($style)'
+style = "bold fg:#1B1E28 bg:#F087BD"
+disabled = false
